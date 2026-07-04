@@ -1,0 +1,15 @@
+# Entornos Virtuales
+WeBasculas/
+venv/
+env/
+
+# Variables de entorno y secretos
+.env
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Archivos generados dinámicamente
+*.xlsx
+*.pdf

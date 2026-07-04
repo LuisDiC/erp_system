@@ -1,0 +1,25 @@
+ERP WEB Recepción/
+├── .env                  
+├── .env.example          
+├── requirements.txt      
+├── README.md            
+├── main.py               
+├── core/                 
+│   ├── config.py         
+│   ├── database.py       
+│   └── security.py       
+├── models/               
+│   └── schemas.py        
+├── services/             
+│   ├── history.py        
+│   └── export.py         
+├── api/                  
+│   ├── auth.py           
+│   └── dashboard.py     
+├── static/               
+│   ├── css/style.css     
+│   └── js/main.js        
+└── templates/            
+    ├── base.html         
+    ├── login.html        
+    └── dashboard.html    
