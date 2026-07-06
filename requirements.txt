@@ -1,6 +1,6 @@
 fastapi==0.109.2
 uvicorn==0.27.1
-sqlalchemy==2.0.25
+sqlalchemy==2.0.51
 pymysql==1.1.0
 pydantic-settings==2.1.0
 passlib[bcrypt]==1.7.4
