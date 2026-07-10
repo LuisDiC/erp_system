@@ -196,7 +196,7 @@ function renderTable(records) {
         let statusBadge = 'bg-secondary';
         if(row.Status === 'COMPLETADA') statusBadge = 'bg-success';
         if(row.Status === 'CANCELADA') statusBadge = 'bg-danger';
-        //   if(row.Status === 'Pendiente') statusBadge = 'bg-warning text-dark';
+        
 
         // Botón dinámico de PDF
         let pdfButton = row.Has_PDF 
