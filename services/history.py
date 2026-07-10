@@ -47,12 +47,10 @@ def get_filtered_estados(
 
     query = query.filter(and_(*filters))
     
-    # Agrupamos por folio para que no se dupliquen las filas en la pantalla principal
-    #query = query.group_by(Estado.folio)
     
     # Conteo de registros únicos
     total = query.with_entities(func.count(func.distinct(Estado.folio))).scalar()
-    
+    # Agrupamos por folio para que no se dupliquen las filas en la pantalla principal
     query = query.group_by(Estado.folio)
     # Paginación y ordenamiento
     records = query.order_by(Estado.Fecha.desc()).offset(skip).limit(limit).all()
